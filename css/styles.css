@@ -58,6 +58,9 @@ ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-nav {
@@ -107,6 +110,9 @@ ul {
 .header-link:hover {
   color: #404bbf;
 }
+.active {
+  color: #404bbf;
+}
 .header-link.active::after {
   position: absolute;
   bottom: -1px;
@@ -149,6 +155,7 @@ ul {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero.jpg);
+  max-width: 1440px;
   min-width: 1440px;
   margin: auto;
   background-repeat: no-repeat;
@@ -194,8 +201,6 @@ ul {
 .main-values {
   padding: 120px 0px;
 }
-.values-container {
-}
 
 .values-second-title {
   color: #2e2f42;
@@ -214,6 +219,9 @@ ul {
   width: 264px;
 }
 .values-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 264px;
   height: 112px;
   flex-shrink: 0;
@@ -223,8 +231,6 @@ ul {
   margin-bottom: 8px;
 }
 .values-icon {
-  display: flex;
-  margin: 24px auto;
 }
 .values-third-title {
   margin-bottom: 8px;
@@ -379,22 +385,21 @@ ul {
 .portfolio-text {
 }
 .footer {
-  
-  background-color: #2E2F42;
+  background-color: #2e2f42;
   min-width: 1440px;
+  max-width: 1400px;
   margin: auto;
 }
 .footer-container {
   display: flex;
   align-items: baseline;
-
 }
 .footer-logo-container {
   display: flex;
   flex-direction: column;
   width: 264px;
-padding: 100px 0;
-  
+  padding: 100px 0;
+  margin-right: 120px;
 }
 .footer-logo {
   display: inline-block;
@@ -417,28 +422,27 @@ padding: 100px 0;
   text-transform: uppercase;
 }
 .footer-description {
-  color:#F4F4FD;
-font-size: 16px;
-line-height: 1.5; 
-letter-spacing: 0.02em;
-width: 264px;
+  color: #f4f4fd;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 264px;
 }
 .footer-socials-container {
   display: flex;
   flex-direction: column;
-  margin-left: 120px;
 }
 .footer-socials {
   display: flex;
   gap: 16px;
 }
 .footer-socials-description {
-  color: #FFF;
-font-size: 16px;
-font-weight: 500;
-line-height: 1.5; 
-letter-spacing: 0.02em;
-margin-bottom: 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 .footer-socials-item {
   width: 40px;
@@ -462,4 +466,5 @@ margin-bottom: 16px;
 .footer-socials-link:focus {
   background-color: #31d0aa;
 }
-.footer-socials-container {}
+.footer-socials-container {
+}
