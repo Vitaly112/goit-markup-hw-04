@@ -60,8 +60,9 @@ ul {
 }
 .header-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+
 }
 
 .header-nav {
@@ -388,7 +389,6 @@ ul {
 .footer {
   background-color: #2e2f42;
   min-width: 1440px;
-  max-width: 1400px;
   margin: auto;
 }
 .footer-container {
