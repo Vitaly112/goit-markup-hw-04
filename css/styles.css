@@ -60,7 +60,6 @@ ul {
 }
 .header-container {
   display: flex;
-  justify-content: center;
   align-items: center;
 
 }
@@ -129,6 +128,7 @@ ul {
   display: flex;
   align-items: center;
   gap: 40px;
+  margin-left: 332px;
 }
 .address {
   font-style: normal;
@@ -469,3 +469,4 @@ ul {
 }
 .footer-socials-container {
 }
+
